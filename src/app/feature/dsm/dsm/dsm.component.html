@@ -1,0 +1,9 @@
+<div class="my-4">
+    DSM component
+</div>
+
+<ul>
+    <li *ngFor="let user of users">
+        <a [routerLink]="['table', user.id,'column']" (click)="getUserId(user.id)">{{user.name}}</a>
+    </li>
+</ul>
